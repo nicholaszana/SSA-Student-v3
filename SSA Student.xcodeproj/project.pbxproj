@@ -3,17 +3,70 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0109F24922F6542D0016F6F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F24822F6542D0016F6F4 /* AppDelegate.swift */; };
-		0109F24B22F6542D0016F6F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F24A22F6542D0016F6F4 /* ViewController.swift */; };
-		0109F24E22F6542D0016F6F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0109F24C22F6542D0016F6F4 /* Main.storyboard */; };
-		0109F25022F6542E0016F6F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0109F24F22F6542E0016F6F4 /* Assets.xcassets */; };
-		0109F25322F6542E0016F6F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0109F25122F6542E0016F6F4 /* LaunchScreen.storyboard */; };
+		0109F24B22F6542D0016F6F4 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F24A22F6542D0016F6F4 /* ScheduleTableViewController.swift */; };
 		0109F25E22F6542E0016F6F4 /* SSA_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F25D22F6542E0016F6F4 /* SSA_StudentTests.swift */; };
 		0109F26922F6542E0016F6F4 /* SSA_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F26822F6542E0016F6F4 /* SSA_StudentUITests.swift */; };
+		0109F27722F6550D0016F6F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F27622F6550D0016F6F4 /* TabBarViewController.swift */; };
+		0109F27E22F658890016F6F4 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F27D22F658890016F6F4 /* BarcodeViewController.swift */; };
+		0109F28522F65CDA0016F6F4 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F28422F65CDA0016F6F4 /* GroupsTableViewController.swift */; };
+		0109F28822F65D670016F6F4 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109F28722F65D670016F6F4 /* MoreTableViewController.swift */; };
+		011C51C12309DEED00B34530 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C51C02309DEED00B34530 /* ScheduleModel.swift */; };
+		011C51C32309E9DF00B34530 /* SchedulePeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C51C22309E9DF00B34530 /* SchedulePeriodTableViewCell.swift */; };
+		011C51C5230B18FB00B34530 /* SchedulePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C51C4230B18FB00B34530 /* SchedulePageViewController.swift */; };
+		011C55C92301CE6C008EAC5D /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55C82301CE6C008EAC5D /* FriendsViewController.swift */; };
+		011C55CD2301CF4D008EAC5D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55CC2301CF4D008EAC5D /* Assets.swift */; };
+		011C55D02301D09A008EAC5D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55CF2301D09A008EAC5D /* AboutViewController.swift */; };
+		011C55D32301D193008EAC5D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55D22301D193008EAC5D /* SettingsTableViewController.swift */; };
+		011C55D72301E817008EAC5D /* PlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55D62301E817008EAC5D /* PlannerViewController.swift */; };
+		011C55DA2301F332008EAC5D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C55D92301F332008EAC5D /* Theme.swift */; };
+		01342EBB2319D11500F36B2D /* WelcomeLetsGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01342EBA2319D11500F36B2D /* WelcomeLetsGoViewController.swift */; };
+		01342EBD2319D5D300F36B2D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01342EBC2319D5D300F36B2D /* User.swift */; };
+		0135709D23117C9800969F1E /* GroupsEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135709C23117C9800969F1E /* GroupsEditViewController.swift */; };
+		0135709F2312130400969F1E /* ScheduleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135709E2312130400969F1E /* ScheduleModelController.swift */; };
+		013893B1230F74A0004B7D06 /* GroupsDetailsBulletinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013893B0230F74A0004B7D06 /* GroupsDetailsBulletinsViewController.swift */; };
+		013893B32310175D004B7D06 /* GroupsDetailsCalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013893B22310175D004B7D06 /* GroupsDetailsCalendarTableViewCell.swift */; };
+		013893B523106573004B7D06 /* GroupDetailsBulletinsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013893B423106573004B7D06 /* GroupDetailsBulletinsTableViewCell.swift */; };
+		013A7B46231F3A0100ADEE31 /* SchoolDaysDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013A7B45231F3A0100ADEE31 /* SchoolDaysDownloader.swift */; };
+		014FF582230F42BA0036F306 /* GroupsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014FF581230F42BA0036F306 /* GroupsDetailsViewController.swift */; };
+		014FF584230F472D0036F306 /* GroupsDetailCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014FF583230F472D0036F306 /* GroupsDetailCalenderViewController.swift */; };
+		016300BC2302430000B39608 /* SFSafariViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016300BB2302430000B39608 /* SFSafariViewControllerExtension.swift */; };
+		016300BE2302470400B39608 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016300BD2302470400B39608 /* UITableViewCellExtension.swift */; };
+		016300C023024B8E00B39608 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016300BF23024B8E00B39608 /* UIColorExtensions.swift */; };
+		016300C2230255BC00B39608 /* GroupCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016300C1230255BC00B39608 /* GroupCellModel.swift */; };
+		01760951232722F6002C282A /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01760950232722F6002C282A /* CoreDataHelper.swift */; };
+		017A9667230B3E0D0067821E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A9666230B3E0D0067821E /* UIImageExtension.swift */; };
+		01ABACE322FB455100E4177F /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ABACE222FB455100E4177F /* UIScreen.swift */; };
+		01ABACE522FB48E200E4177F /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ABACE422FB48E200E4177F /* BarcodeScannerViewController.swift */; };
+		01ABACE722FB5CEA00E4177F /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ABACE622FB5CEA00E4177F /* MoreTableViewCell.swift */; };
+		01B094A1232594EF00FE0271 /* ScheduleDownloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B094A0232594EF00FE0271 /* ScheduleDownloadTableViewCell.swift */; };
+		01B094A92325DC8900FE0271 /* SignOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B094A82325DC8900FE0271 /* SignOutTableViewCell.swift */; };
+		01B37D182318A54D00C2F514 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B37D172318A54C00C2F514 /* WelcomeViewController.swift */; };
+		01B37D1A2318B00300C2F514 /* WelcomeTypeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B37D192318B00300C2F514 /* WelcomeTypeSelectionViewController.swift */; };
+		01BDD2EF232583D5004180E0 /* ScheduleDownloadModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDD2EE232583D5004180E0 /* ScheduleDownloadModelController.swift */; };
+		01BDD2F12325860F004180E0 /* ClassesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDD2F02325860F004180E0 /* ClassesModel.swift */; };
+		01BDD2F323258757004180E0 /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDD2F223258757004180E0 /* FirebaseConfig.swift */; };
+		01C5572F231088C7009AB991 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5572E231088C7009AB991 /* FriendsTableViewCell.swift */; };
+		01C5573123108D4C009AB991 /* ProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C5573023108D4C009AB991 /* ProfilePicture.swift */; };
+		01C55733231093B4009AB991 /* PlannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C55732231093B4009AB991 /* PlannerTableViewCell.swift */; };
+		01D0FABF231D911E00E07A03 /* ScheduleDownloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0FABE231D911E00E07A03 /* ScheduleDownloadTableViewController.swift */; };
+		01D4FE0F231478A300159A8C /* ScheduleGoToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D4FE0E231478A300159A8C /* ScheduleGoToViewController.swift */; };
+		01DA0B1B23246442005612C7 /* SSA Student.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0B1923246442005612C7 /* SSA Student.xcdatamodeld */; };
+		01DA0B1D23246683005612C7 /* CoreDataStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DA0B1C23246683005612C7 /* CoreDataStrings.swift */; };
+		01FA904E23048B8000095898 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA904D23048B8000095898 /* UIApplicationExtension.swift */; };
+		01FBBF1A230B3204003CD789 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBBF19230B3204003CD789 /* GroupsTableViewCell.swift */; };
+		01FC8F4E231734FA00FF4DBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FC8F4D231734FA00FF4DBA /* Launch Screen.storyboard */; };
+		01FC8F502317364700FF4DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FC8F4F2317364700FF4DBA /* Assets.xcassets */; };
+		01FC8F52231746FA00FF4DBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01FC8F51231746FA00FF4DBA /* GoogleService-Info.plist */; };
+		01FC8F5523174B9A00FF4DBA /* ScheduleLargeTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8F5423174B9A00FF4DBA /* ScheduleLargeTitleTableViewCell.swift */; };
+		01FC8F5723174BFC00FF4DBA /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC8F5623174BFC00FF4DBA /* Defaults.swift */; };
+		4D9438152B703F35C9746E77 /* Pods_SSA_StudentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301A9D995742B1AAE41FF9C1 /* Pods_SSA_StudentUITests.framework */; };
+		66D8877387BAEBCCE12E1AD9 /* Pods_SSA_Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA17333A99090C46B94C8694 /* Pods_SSA_Student.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9E5FABA8AA7EC00798ECA778 /* Pods_SSA_StudentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DE3BCDEE1B1066FB76B380 /* Pods_SSA_StudentTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +89,7 @@
 /* Begin PBXFileReference section */
 		0109F24522F6542D0016F6F4 /* SSA Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSA Student.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0109F24822F6542D0016F6F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0109F24A22F6542D0016F6F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0109F24D22F6542D0016F6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0109F24F22F6542E0016F6F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0109F25222F6542E0016F6F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0109F24A22F6542D0016F6F4 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		0109F25422F6542E0016F6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0109F25922F6542E0016F6F4 /* SSA StudentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SSA StudentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0109F25D22F6542E0016F6F4 /* SSA_StudentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSA_StudentTests.swift; sourceTree = "<group>"; };
@@ -47,6 +97,75 @@
 		0109F26422F6542E0016F6F4 /* SSA StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SSA StudentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0109F26822F6542E0016F6F4 /* SSA_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSA_StudentUITests.swift; sourceTree = "<group>"; };
 		0109F26A22F6542E0016F6F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0109F27622F6550D0016F6F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0109F27D22F658890016F6F4 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		0109F28422F65CDA0016F6F4 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		0109F28722F65D670016F6F4 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		011C51C02309DEED00B34530 /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		011C51C22309E9DF00B34530 /* SchedulePeriodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePeriodTableViewCell.swift; sourceTree = "<group>"; };
+		011C51C4230B18FB00B34530 /* SchedulePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePageViewController.swift; sourceTree = "<group>"; };
+		011C55C82301CE6C008EAC5D /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		011C55CC2301CF4D008EAC5D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		011C55CF2301D09A008EAC5D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		011C55D22301D193008EAC5D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		011C55D62301E817008EAC5D /* PlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewController.swift; sourceTree = "<group>"; };
+		011C55D92301F332008EAC5D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		01342EBA2319D11500F36B2D /* WelcomeLetsGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLetsGoViewController.swift; sourceTree = "<group>"; };
+		01342EBC2319D5D300F36B2D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0135709C23117C9800969F1E /* GroupsEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsEditViewController.swift; sourceTree = "<group>"; };
+		0135709E2312130400969F1E /* ScheduleModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModelController.swift; sourceTree = "<group>"; };
+		013893B0230F74A0004B7D06 /* GroupsDetailsBulletinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDetailsBulletinsViewController.swift; sourceTree = "<group>"; };
+		013893B22310175D004B7D06 /* GroupsDetailsCalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDetailsCalendarTableViewCell.swift; sourceTree = "<group>"; };
+		013893B423106573004B7D06 /* GroupDetailsBulletinsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsBulletinsTableViewCell.swift; sourceTree = "<group>"; };
+		013A7B45231F3A0100ADEE31 /* SchoolDaysDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDaysDownloader.swift; sourceTree = "<group>"; };
+		014FF581230F42BA0036F306 /* GroupsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDetailsViewController.swift; sourceTree = "<group>"; };
+		014FF583230F472D0036F306 /* GroupsDetailCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsDetailCalenderViewController.swift; sourceTree = "<group>"; };
+		016300BB2302430000B39608 /* SFSafariViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewControllerExtension.swift; sourceTree = "<group>"; };
+		016300BD2302470400B39608 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		016300BF23024B8E00B39608 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		016300C1230255BC00B39608 /* GroupCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCellModel.swift; sourceTree = "<group>"; };
+		01760950232722F6002C282A /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		017A9666230B3E0D0067821E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		018ED8A6232492140061DA71 /* CoreDataCyclePeriod+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataCyclePeriod+CoreDataClass.swift"; sourceTree = "<group>"; };
+		018ED8A7232492140061DA71 /* CoreDataCyclePeriod+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataCyclePeriod+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		018ED8A8232492140061DA71 /* CoreDataSchoolDay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataSchoolDay+CoreDataClass.swift"; sourceTree = "<group>"; };
+		018ED8A9232492140061DA71 /* CoreDataSchoolDay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataSchoolDay+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		018ED8AA232492140061DA71 /* CoreDataCycleDay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataCycleDay+CoreDataClass.swift"; sourceTree = "<group>"; };
+		018ED8AB232492140061DA71 /* CoreDataCycleDay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataCycleDay+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		01ABACE022FB43EF00E4177F /* RSBarcodes_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RSBarcodes_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01ABACE222FB455100E4177F /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		01ABACE422FB48E200E4177F /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		01ABACE622FB5CEA00E4177F /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		01B094A0232594EF00FE0271 /* ScheduleDownloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDownloadTableViewCell.swift; sourceTree = "<group>"; };
+		01B094A82325DC8900FE0271 /* SignOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutTableViewCell.swift; sourceTree = "<group>"; };
+		01B37D172318A54C00C2F514 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		01B37D192318B00300C2F514 /* WelcomeTypeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTypeSelectionViewController.swift; sourceTree = "<group>"; };
+		01BDD2EE232583D5004180E0 /* ScheduleDownloadModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDownloadModelController.swift; sourceTree = "<group>"; };
+		01BDD2F02325860F004180E0 /* ClassesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesModel.swift; sourceTree = "<group>"; };
+		01BDD2F223258757004180E0 /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		01C5572E231088C7009AB991 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		01C5573023108D4C009AB991 /* ProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicture.swift; sourceTree = "<group>"; };
+		01C55732231093B4009AB991 /* PlannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerTableViewCell.swift; sourceTree = "<group>"; };
+		01D0FABE231D911E00E07A03 /* ScheduleDownloadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDownloadTableViewController.swift; sourceTree = "<group>"; };
+		01D4FE0E231478A300159A8C /* ScheduleGoToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleGoToViewController.swift; sourceTree = "<group>"; };
+		01DA0B1A23246442005612C7 /* SSA Student.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SSA Student.xcdatamodel"; sourceTree = "<group>"; };
+		01DA0B1C23246683005612C7 /* CoreDataStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStrings.swift; sourceTree = "<group>"; };
+		01FA904D23048B8000095898 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		01FBBF19230B3204003CD789 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
+		01FC8F4D231734FA00FF4DBA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		01FC8F4F2317364700FF4DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01FC8F51231746FA00FF4DBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01FC8F5423174B9A00FF4DBA /* ScheduleLargeTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLargeTitleTableViewCell.swift; sourceTree = "<group>"; };
+		01FC8F5623174BFC00FF4DBA /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		03DE3BCDEE1B1066FB76B380 /* Pods_SSA_StudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSA_StudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08B27A85C8ED1AAB8761A149 /* Pods-SSA Student.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA Student.release.xcconfig"; path = "Target Support Files/Pods-SSA Student/Pods-SSA Student.release.xcconfig"; sourceTree = "<group>"; };
+		301A9D995742B1AAE41FF9C1 /* Pods_SSA_StudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSA_StudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DCB2E10BE7D90B880C1AC3 /* Pods-SSA StudentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA StudentUITests.debug.xcconfig"; path = "Target Support Files/Pods-SSA StudentUITests/Pods-SSA StudentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EEE8E676F24DD56F8443CD3 /* Pods-SSA Student.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA Student.debug.xcconfig"; path = "Target Support Files/Pods-SSA Student/Pods-SSA Student.debug.xcconfig"; sourceTree = "<group>"; };
+		5063631AE8CB6745A5140B37 /* Pods-SSA StudentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA StudentUITests.release.xcconfig"; path = "Target Support Files/Pods-SSA StudentUITests/Pods-SSA StudentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8EFF65ECD1C4244A383C95B0 /* Pods-SSA StudentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA StudentTests.debug.xcconfig"; path = "Target Support Files/Pods-SSA StudentTests/Pods-SSA StudentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA17333A99090C46B94C8694 /* Pods_SSA_Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSA_Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71F28C74ACAAFB95A0E342A /* Pods-SSA StudentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSA StudentTests.release.xcconfig"; path = "Target Support Files/Pods-SSA StudentTests/Pods-SSA StudentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D8877387BAEBCCE12E1AD9 /* Pods_SSA_Student.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5FABA8AA7EC00798ECA778 /* Pods_SSA_StudentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9438152B703F35C9746E77 /* Pods_SSA_StudentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +203,8 @@
 				0109F25C22F6542E0016F6F4 /* SSA StudentTests */,
 				0109F26722F6542E0016F6F4 /* SSA StudentUITests */,
 				0109F24622F6542D0016F6F4 /* Products */,
+				FE86DBD7AEDF824806A0F820 /* Pods */,
+				45004A1A77FEF5135C1627BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +221,24 @@
 		0109F24722F6542D0016F6F4 /* SSA Student */ = {
 			isa = PBXGroup;
 			children = (
+				01DA0B1C23246683005612C7 /* CoreDataStrings.swift */,
+				01DA0B1E23248D67005612C7 /* CoreData */,
+				01B37D142318A50900C2F514 /* Welcome */,
+				01FC8F51231746FA00FF4DBA /* GoogleService-Info.plist */,
+				011C55CA2301CF36008EAC5D /* UIAssets */,
+				0109F28622F65D490016F6F4 /* More */,
+				0109F27F22F659100016F6F4 /* UIKit Class Extensions */,
+				0109F27C22F658420016F6F4 /* Groups */,
+				0109F27A22F658360016F6F4 /* Barcode */,
+				0109F27822F658250016F6F4 /* Schedule */,
 				0109F24822F6542D0016F6F4 /* AppDelegate.swift */,
-				0109F24A22F6542D0016F6F4 /* ViewController.swift */,
-				0109F24C22F6542D0016F6F4 /* Main.storyboard */,
-				0109F24F22F6542E0016F6F4 /* Assets.xcassets */,
-				0109F25122F6542E0016F6F4 /* LaunchScreen.storyboard */,
+				01DA0B1923246442005612C7 /* SSA Student.xcdatamodeld */,
+				0109F27622F6550D0016F6F4 /* TabBarViewController.swift */,
 				0109F25422F6542E0016F6F4 /* Info.plist */,
+				01FC8F4D231734FA00FF4DBA /* Launch Screen.storyboard */,
+				01FC8F5623174BFC00FF4DBA /* Defaults.swift */,
+				01342EBC2319D5D300F36B2D /* User.swift */,
+				01BDD2F223258757004180E0 /* FirebaseConfig.swift */,
 			);
 			path = "SSA Student";
 			sourceTree = "<group>";
@@ -125,6 +261,234 @@
 			path = "SSA StudentUITests";
 			sourceTree = "<group>";
 		};
+		0109F27822F658250016F6F4 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				01BDD2F723259200004180E0 /* ModelControllers */,
+				01BDD2F6232591EE004180E0 /* TableViewCells */,
+				01BDD2F5232591D9004180E0 /* ViewControllers */,
+				01BDD2F4232591C6004180E0 /* Models */,
+				013A7B45231F3A0100ADEE31 /* SchoolDaysDownloader.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		0109F27A22F658360016F6F4 /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				0109F27D22F658890016F6F4 /* BarcodeViewController.swift */,
+				01ABACE422FB48E200E4177F /* BarcodeScannerViewController.swift */,
+			);
+			path = Barcode;
+			sourceTree = "<group>";
+		};
+		0109F27C22F658420016F6F4 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				0135709B23117C5600969F1E /* GroupsDetailsBulletins */,
+				0135709A23117C3E00969F1E /* GroupsDetailsCalendar */,
+				0109F28422F65CDA0016F6F4 /* GroupsTableViewController.swift */,
+				016300C1230255BC00B39608 /* GroupCellModel.swift */,
+				01FBBF19230B3204003CD789 /* GroupsTableViewCell.swift */,
+				014FF581230F42BA0036F306 /* GroupsDetailsViewController.swift */,
+				0135709C23117C9800969F1E /* GroupsEditViewController.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		0109F27F22F659100016F6F4 /* UIKit Class Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01ABACE222FB455100E4177F /* UIScreen.swift */,
+			);
+			path = "UIKit Class Extensions";
+			sourceTree = "<group>";
+		};
+		0109F28622F65D490016F6F4 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				011C55D52301E806008EAC5D /* Planner */,
+				011C55D12301D17A008EAC5D /* Settings */,
+				011C55CE2301D089008EAC5D /* About */,
+				011C55C72301CE58008EAC5D /* Friends */,
+				0109F28722F65D670016F6F4 /* MoreTableViewController.swift */,
+				01ABACE622FB5CEA00E4177F /* MoreTableViewCell.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		011C55C72301CE58008EAC5D /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				011C55C82301CE6C008EAC5D /* FriendsViewController.swift */,
+				01C5572E231088C7009AB991 /* FriendsTableViewCell.swift */,
+				01C5573023108D4C009AB991 /* ProfilePicture.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		011C55CA2301CF36008EAC5D /* UIAssets */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8F4F2317364700FF4DBA /* Assets.xcassets */,
+				011C55D82301F322008EAC5D /* Themes */,
+				011C55CC2301CF4D008EAC5D /* Assets.swift */,
+			);
+			path = UIAssets;
+			sourceTree = "<group>";
+		};
+		011C55CE2301D089008EAC5D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				011C55CF2301D09A008EAC5D /* AboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		011C55D12301D17A008EAC5D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8F5323174B8200FF4DBA /* Cells */,
+				011C55D22301D193008EAC5D /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		011C55D52301E806008EAC5D /* Planner */ = {
+			isa = PBXGroup;
+			children = (
+				011C55D62301E817008EAC5D /* PlannerViewController.swift */,
+				01C55732231093B4009AB991 /* PlannerTableViewCell.swift */,
+			);
+			path = Planner;
+			sourceTree = "<group>";
+		};
+		011C55D82301F322008EAC5D /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				011C55D92301F332008EAC5D /* Theme.swift */,
+				016300BB2302430000B39608 /* SFSafariViewControllerExtension.swift */,
+				016300BD2302470400B39608 /* UITableViewCellExtension.swift */,
+				016300BF23024B8E00B39608 /* UIColorExtensions.swift */,
+				01FA904D23048B8000095898 /* UIApplicationExtension.swift */,
+				017A9666230B3E0D0067821E /* UIImageExtension.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		0135709A23117C3E00969F1E /* GroupsDetailsCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				014FF583230F472D0036F306 /* GroupsDetailCalenderViewController.swift */,
+				013893B22310175D004B7D06 /* GroupsDetailsCalendarTableViewCell.swift */,
+			);
+			path = GroupsDetailsCalendar;
+			sourceTree = "<group>";
+		};
+		0135709B23117C5600969F1E /* GroupsDetailsBulletins */ = {
+			isa = PBXGroup;
+			children = (
+				013893B0230F74A0004B7D06 /* GroupsDetailsBulletinsViewController.swift */,
+				013893B423106573004B7D06 /* GroupDetailsBulletinsTableViewCell.swift */,
+			);
+			path = GroupsDetailsBulletins;
+			sourceTree = "<group>";
+		};
+		01B37D142318A50900C2F514 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				01B37D172318A54C00C2F514 /* WelcomeViewController.swift */,
+				01B37D192318B00300C2F514 /* WelcomeTypeSelectionViewController.swift */,
+				01342EBA2319D11500F36B2D /* WelcomeLetsGoViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		01BDD2F4232591C6004180E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				011C51C02309DEED00B34530 /* ScheduleModel.swift */,
+				01BDD2F02325860F004180E0 /* ClassesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01BDD2F5232591D9004180E0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				011C51C4230B18FB00B34530 /* SchedulePageViewController.swift */,
+				01D4FE0E231478A300159A8C /* ScheduleGoToViewController.swift */,
+				01D0FABE231D911E00E07A03 /* ScheduleDownloadTableViewController.swift */,
+				0109F24A22F6542D0016F6F4 /* ScheduleTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		01BDD2F6232591EE004180E0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				011C51C22309E9DF00B34530 /* SchedulePeriodTableViewCell.swift */,
+				01B094A0232594EF00FE0271 /* ScheduleDownloadTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		01BDD2F723259200004180E0 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0135709E2312130400969F1E /* ScheduleModelController.swift */,
+				01BDD2EE232583D5004180E0 /* ScheduleDownloadModelController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		01DA0B1E23248D67005612C7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				018ED8A6232492140061DA71 /* CoreDataCyclePeriod+CoreDataClass.swift */,
+				018ED8A7232492140061DA71 /* CoreDataCyclePeriod+CoreDataProperties.swift */,
+				018ED8A8232492140061DA71 /* CoreDataSchoolDay+CoreDataClass.swift */,
+				018ED8A9232492140061DA71 /* CoreDataSchoolDay+CoreDataProperties.swift */,
+				018ED8AA232492140061DA71 /* CoreDataCycleDay+CoreDataClass.swift */,
+				018ED8AB232492140061DA71 /* CoreDataCycleDay+CoreDataProperties.swift */,
+				01760950232722F6002C282A /* CoreDataHelper.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		01FC8F5323174B8200FF4DBA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				01FC8F5423174B9A00FF4DBA /* ScheduleLargeTitleTableViewCell.swift */,
+				01B094A82325DC8900FE0271 /* SignOutTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		45004A1A77FEF5135C1627BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01ABACE022FB43EF00E4177F /* RSBarcodes_Swift.framework */,
+				AA17333A99090C46B94C8694 /* Pods_SSA_Student.framework */,
+				03DE3BCDEE1B1066FB76B380 /* Pods_SSA_StudentTests.framework */,
+				301A9D995742B1AAE41FF9C1 /* Pods_SSA_StudentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE86DBD7AEDF824806A0F820 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EEE8E676F24DD56F8443CD3 /* Pods-SSA Student.debug.xcconfig */,
+				08B27A85C8ED1AAB8761A149 /* Pods-SSA Student.release.xcconfig */,
+				8EFF65ECD1C4244A383C95B0 /* Pods-SSA StudentTests.debug.xcconfig */,
+				C71F28C74ACAAFB95A0E342A /* Pods-SSA StudentTests.release.xcconfig */,
+				37DCB2E10BE7D90B880C1AC3 /* Pods-SSA StudentUITests.debug.xcconfig */,
+				5063631AE8CB6745A5140B37 /* Pods-SSA StudentUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +496,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0109F26D22F6542E0016F6F4 /* Build configuration list for PBXNativeTarget "SSA Student" */;
 			buildPhases = (
+				491731135D55E7BF20BBA6FA /* [CP] Check Pods Manifest.lock */,
 				0109F24122F6542D0016F6F4 /* Sources */,
 				0109F24222F6542D0016F6F4 /* Frameworks */,
 				0109F24322F6542D0016F6F4 /* Resources */,
+				708661D192D47C7E2363FC89 /* [CP] Embed Pods Frameworks */,
+				D1F33C1BCBF9A44C7992F755 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +516,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0109F27022F6542E0016F6F4 /* Build configuration list for PBXNativeTarget "SSA StudentTests" */;
 			buildPhases = (
+				3C04B0B3703223A1E670888A /* [CP] Check Pods Manifest.lock */,
 				0109F25522F6542E0016F6F4 /* Sources */,
 				0109F25622F6542E0016F6F4 /* Frameworks */,
 				0109F25722F6542E0016F6F4 /* Resources */,
@@ -167,6 +535,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0109F27322F6542E0016F6F4 /* Build configuration list for PBXNativeTarget "SSA StudentUITests" */;
 			buildPhases = (
+				FF25D1C0D39228CBEE754D95 /* [CP] Check Pods Manifest.lock */,
 				0109F26022F6542E0016F6F4 /* Sources */,
 				0109F26122F6542E0016F6F4 /* Frameworks */,
 				0109F26222F6542E0016F6F4 /* Resources */,
@@ -229,9 +598,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0109F25322F6542E0016F6F4 /* LaunchScreen.storyboard in Resources */,
-				0109F25022F6542E0016F6F4 /* Assets.xcassets in Resources */,
-				0109F24E22F6542D0016F6F4 /* Main.storyboard in Resources */,
+				01FC8F502317364700FF4DBA /* Assets.xcassets in Resources */,
+				01FC8F4E231734FA00FF4DBA /* Launch Screen.storyboard in Resources */,
+				01FC8F52231746FA00FF4DBA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +620,166 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C04B0B3703223A1E670888A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSA StudentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		491731135D55E7BF20BBA6FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSA Student-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708661D192D47C7E2363FC89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F33C1BCBF9A44C7992F755 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSA Student/Pods-SSA Student-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF25D1C0D39228CBEE754D95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSA StudentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0109F24122F6542D0016F6F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0109F24B22F6542D0016F6F4 /* ViewController.swift in Sources */,
+				0109F24B22F6542D0016F6F4 /* ScheduleTableViewController.swift in Sources */,
+				01342EBB2319D11500F36B2D /* WelcomeLetsGoViewController.swift in Sources */,
+				01B37D182318A54D00C2F514 /* WelcomeViewController.swift in Sources */,
+				01DA0B1D23246683005612C7 /* CoreDataStrings.swift in Sources */,
+				013893B32310175D004B7D06 /* GroupsDetailsCalendarTableViewCell.swift in Sources */,
+				0135709F2312130400969F1E /* ScheduleModelController.swift in Sources */,
+				011C55CD2301CF4D008EAC5D /* Assets.swift in Sources */,
+				0109F27E22F658890016F6F4 /* BarcodeViewController.swift in Sources */,
+				016300BE2302470400B39608 /* UITableViewCellExtension.swift in Sources */,
+				01BDD2EF232583D5004180E0 /* ScheduleDownloadModelController.swift in Sources */,
+				0109F27722F6550D0016F6F4 /* TabBarViewController.swift in Sources */,
+				011C51C32309E9DF00B34530 /* SchedulePeriodTableViewCell.swift in Sources */,
+				01B094A1232594EF00FE0271 /* ScheduleDownloadTableViewCell.swift in Sources */,
+				0109F28822F65D670016F6F4 /* MoreTableViewController.swift in Sources */,
+				01D0FABF231D911E00E07A03 /* ScheduleDownloadTableViewController.swift in Sources */,
+				0135709D23117C9800969F1E /* GroupsEditViewController.swift in Sources */,
+				01FC8F5523174B9A00FF4DBA /* ScheduleLargeTitleTableViewCell.swift in Sources */,
+				01FBBF1A230B3204003CD789 /* GroupsTableViewCell.swift in Sources */,
+				01B094A92325DC8900FE0271 /* SignOutTableViewCell.swift in Sources */,
+				013893B1230F74A0004B7D06 /* GroupsDetailsBulletinsViewController.swift in Sources */,
 				0109F24922F6542D0016F6F4 /* AppDelegate.swift in Sources */,
+				011C55D02301D09A008EAC5D /* AboutViewController.swift in Sources */,
+				01ABACE322FB455100E4177F /* UIScreen.swift in Sources */,
+				01FC8F5723174BFC00FF4DBA /* Defaults.swift in Sources */,
+				016300C2230255BC00B39608 /* GroupCellModel.swift in Sources */,
+				011C55C92301CE6C008EAC5D /* FriendsViewController.swift in Sources */,
+				01FA904E23048B8000095898 /* UIApplicationExtension.swift in Sources */,
+				01ABACE522FB48E200E4177F /* BarcodeScannerViewController.swift in Sources */,
+				013A7B46231F3A0100ADEE31 /* SchoolDaysDownloader.swift in Sources */,
+				013893B523106573004B7D06 /* GroupDetailsBulletinsTableViewCell.swift in Sources */,
+				011C55D32301D193008EAC5D /* SettingsTableViewController.swift in Sources */,
+				01DA0B1B23246442005612C7 /* SSA Student.xcdatamodeld in Sources */,
+				011C55D72301E817008EAC5D /* PlannerViewController.swift in Sources */,
+				01BDD2F12325860F004180E0 /* ClassesModel.swift in Sources */,
+				011C51C12309DEED00B34530 /* ScheduleModel.swift in Sources */,
+				017A9667230B3E0D0067821E /* UIImageExtension.swift in Sources */,
+				01C55733231093B4009AB991 /* PlannerTableViewCell.swift in Sources */,
+				011C51C5230B18FB00B34530 /* SchedulePageViewController.swift in Sources */,
+				011C55DA2301F332008EAC5D /* Theme.swift in Sources */,
+				01B37D1A2318B00300C2F514 /* WelcomeTypeSelectionViewController.swift in Sources */,
+				01760951232722F6002C282A /* CoreDataHelper.swift in Sources */,
+				01C5572F231088C7009AB991 /* FriendsTableViewCell.swift in Sources */,
+				014FF582230F42BA0036F306 /* GroupsDetailsViewController.swift in Sources */,
+				01ABACE722FB5CEA00E4177F /* MoreTableViewCell.swift in Sources */,
+				014FF584230F472D0036F306 /* GroupsDetailCalenderViewController.swift in Sources */,
+				01C5573123108D4C009AB991 /* ProfilePicture.swift in Sources */,
+				01D4FE0F231478A300159A8C /* ScheduleGoToViewController.swift in Sources */,
+				016300C023024B8E00B39608 /* UIColorExtensions.swift in Sources */,
+				016300BC2302430000B39608 /* SFSafariViewControllerExtension.swift in Sources */,
+				0109F28522F65CDA0016F6F4 /* GroupsTableViewController.swift in Sources */,
+				01BDD2F323258757004180E0 /* FirebaseConfig.swift in Sources */,
+				01342EBD2319D5D300F36B2D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +813,6 @@
 			targetProxy = 0109F26522F6542E0016F6F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0109F24C22F6542D0016F6F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0109F24D22F6542D0016F6F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0109F25122F6542E0016F6F4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0109F25222F6542E0016F6F4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0109F26B22F6542E0016F6F4 /* Debug */ = {
@@ -430,16 +933,19 @@
 		};
 		0109F26E22F6542E0016F6F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEE8E676F24DD56F8443CD3 /* Pods-SSA Student.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3HLPYNRUF3;
 				INFOPLIST_FILE = "SSA Student/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickzana.SSA-Student";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssamobiledevs.SSAStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,16 +954,19 @@
 		};
 		0109F26F22F6542E0016F6F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B27A85C8ED1AAB8761A149 /* Pods-SSA Student.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3HLPYNRUF3;
 				INFOPLIST_FILE = "SSA Student/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nickzana.SSA-Student";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssamobiledevs.SSAStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +975,7 @@
 		};
 		0109F27122F6542E0016F6F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EFF65ECD1C4244A383C95B0 /* Pods-SSA StudentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +997,7 @@
 		};
 		0109F27222F6542E0016F6F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71F28C74ACAAFB95A0E342A /* Pods-SSA StudentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +1019,7 @@
 		};
 		0109F27422F6542E0016F6F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DCB2E10BE7D90B880C1AC3 /* Pods-SSA StudentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +1040,7 @@
 		};
 		0109F27522F6542E0016F6F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5063631AE8CB6745A5140B37 /* Pods-SSA StudentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +1099,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01DA0B1923246442005612C7 /* SSA Student.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01DA0B1A23246442005612C7 /* SSA Student.xcdatamodel */,
+			);
+			currentVersion = 01DA0B1A23246442005612C7 /* SSA Student.xcdatamodel */;
+			path = "SSA Student.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0109F23D22F6542D0016F6F4 /* Project object */;
 }

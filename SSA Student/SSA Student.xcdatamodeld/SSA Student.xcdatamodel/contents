@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14897.2" systemVersion="19A546d" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDataCycleDay" representedClassName=".CoreDataCycleDay" syncable="YES" codeGenerationType="class">
+        <attribute name="day" optional="YES" attributeType="String"/>
+        <relationship name="periods" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CoreDataCyclePeriod" inverseName="parentCycleDay" inverseEntity="CoreDataCyclePeriod"/>
+    </entity>
+    <entity name="CoreDataCyclePeriod" representedClassName=".CoreDataCyclePeriod" syncable="YES" codeGenerationType="class">
+        <attribute name="block" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
+        <relationship name="parentCycleDay" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataCycleDay" inverseName="periods" inverseEntity="CoreDataCycleDay"/>
+    </entity>
+    <entity name="CoreDataScheduleClass" representedClassName="CoreDataScheduleClass" syncable="YES" codeGenerationType="class">
+        <attribute name="block" optional="YES" attributeType="String"/>
+        <attribute name="classId" optional="YES" attributeType="String"/>
+        <attribute name="lunch" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CoreDataSchoolDay" representedClassName=".CoreDataSchoolDay" syncable="YES" codeGenerationType="class">
+        <attribute name="cycleDay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CoreDataCycleDay" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="CoreDataCyclePeriod" positionX="-36" positionY="27" width="128" height="105"/>
+        <element name="CoreDataSchoolDay" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="CoreDataScheduleClass" positionX="-45" positionY="45" width="128" height="103"/>
+    </elements>
+</model>
